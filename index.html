@@ -4,19 +4,14 @@
 <head>
   <!-- Set the page title -->
   <title>Assignment 02</title>
-
   <!-- Set the charset we're using to UTF-8 -->
   <meta charset="utf-8" />
-
   <!-- Set the screens default zoom / scale to 1 -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <!-- Specifies the document mode for Internet Explorer -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
   <!-- We are using a CSS Reset file to standardize browser default css -->
   <link rel="stylesheet" href="./reset.css" />
-
   <!-- This is where all of our awesome CSS code goes -->
   <link rel="stylesheet" href="./style.css" />
 </head>
@@ -27,7 +22,249 @@
     YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
 
   -->
-  <h1>Assignment 02</h1>
+  <header>
+      <img src="./images/logo.png" alt="Logo Company & Co's Logo">
+      <h2>Logo Company & Co</h2>
+
+      <nav class="topnav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#abt">About Us</a></li>
+          <li><a href="#contents">Contents</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main>
+      <img src="./images/logobanner.png" alt="Company banner">
+      <section class="hero">
+        <img src="./images/hero.jpg" alt="Image of an artistic eye graphic being drawn">
+        <h1>Logo Company & Co Graphics Suppliers</h1>
+        <!--Offset for anchor link-->
+        <div id="abt" style="position: relative; top: -1090px"></div>
+        <p>Creating logos for the digital age and beyond! Logo Company & Co, 
+          your premier destination for simple, sleek, and industrial
+          graphic and logo design solutions. We are committed to elevating your
+          brand's presence through impactful design. Join us in giving your 
+          visions iconic visuals.</p>
+        </section>
+
+      <section class="toc">
+        <h2 id="contents">Table Of Contents</h2>
+        <ul>
+          <li><a href="#cta">Call To Action</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+          <li><a href="#pricing">Pricing Information</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </section>
+
+      <section class="cta">
+        <h2 id="cta">Call To Action</h2>
+
+        <p>Ready to transform your brand's image? Let's craft a logo that 
+          speaks volumes about your identity. At Logo Company & Co, we're 
+          dedicated to bringing your vision to life. Explore our creative 
+          expertise, and together, we'll redefine your brand for the digital 
+          age. Take the first step towards iconic visuals – Contact us today!</p>
+      </section>
+
+      <section class="faq">
+        <h2 id="faq">Frequently Asked Questions</h2>
+
+        <ul>
+          <li><b>What services does Logo Company & Co offer?</b>
+            <ul>
+              <li>We specialize in logo design, graphic design, and branding services.</li>
+            </ul>
+          </li>
+
+          <li><b>How long does it take to design a logo?</b>
+            <ul>
+              <li>The timeline depends on your requirents and 
+                complexity of the project. We'll provide you with a 
+                project timeline during the consultation. </li>
+            </ul>
+          </li>
+
+          <li><b>What is the design process like?</b>
+            <ul>
+              <li>Our design process involves consultation, concept creation, 
+                revisions, and final delivery. We'll keep you involved at 
+                every step</li>
+            </ul>
+          </li>
+
+          <li><b>Do I own the rights to the logo once it's designed?</b>
+            <ul>
+              <li>Yes, once the project is complete and payment is 
+                received, you'll own the full rights to the logo.</li>
+            </ul>
+          </li>
+
+          <li><b>What file formats will I receive for my logo?</b>
+            <ul>
+              <li>You'll receive the logo in various formats suitable 
+                for both print and digital use, including PNG, JPEG.</li>
+                <li>Depending on your chosen package you'll additionally 
+                  receive vector formats like SVG, AI, and other project files.</li>
+            </ul>
+          </li>
+
+          <li><b>How do I get started with Logo Company & Co?</b>
+            <ul>
+              <li>Simply reach out to us through our <a href="contact">contact</a> form, 
+                and we'll schedule a consultation to discuss your project.</li>
+            </ul>
+          </li>
+
+          <li><b>Can you redesign an existing logo?</b>
+            <ul>
+              <li>Absolutely! We can refresh and modernize existing 
+                logos to align with your brand's evolving identity.</li>
+            </ul>
+          </li>
+
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="pricing">Princing Information</h2>
+        <div class="pricecontainer">
+          <table>
+              <tr>
+                <td>
+                  <h3>Basic</h3>
+                  <p>$399</p>
+                  <ul>
+                    <li>2 Design Concepts</li>
+                    <li>2 Revisions</li>
+                    <li>Custom Logo</li>
+                    <li>High Resolution Files</li>
+                    <li>Ownership</li>
+                  </ul>
+                </td>
+              
+                <td>
+                  <h3>Standard</h3>
+                  <p>$499</p>
+                  <ul>
+                    <li>3 Design Concepts</li>
+                    <li>3 Revisions</li>
+                    <li>Source Files</li>
+                    <li>Custom Logo</li>
+                    <li>High Resolution Files</li>
+                    <li>Ownership</li>
+                  </ul>
+                </td>
+                           
+                <td>
+                  <h3>Premium</h3>
+                  <p>$999</p>
+                  <ul>
+                    <li>5 Design Concepts</li>
+                    <li>Unlimited Revisions</li>
+                    <li>Source Files</li>
+                    <li>Media Kit</li>
+                    <li>Branding Guidelines</li>
+                    <li>Custom Logo</li>
+                    <li>High Resolution Files</li>
+                    <li>Ownership</li>
+                  </ul>
+                </td>
+              </tr>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <!--Offset for anchor link-->
+        <div id="contact" style="position: relative; top: 45px"></div>
+        <div class="contactcontent">
+          <div class="textcontact">
+            <h2>Contact Us</h2>
+
+            <p>Ready to take the next step in transforming your brand's 
+              visual identity? We'd love to hear from you! Whether you're 
+              interested in our design services, have questions, or need a custom 
+              quote, our dedicated team at Logo Company & Co is here to assist you.</p>
+
+            <p>Fill out the form, and start the conversation. Your vision is our 
+              inspiration.</p>
+          </div>
+          
+          <form>
+            <fieldset>
+              <legend class="ftitle">Your Information</legend>
+
+              <div class="formcontainer">
+                <div class="row">
+                  <div class="half">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" placeholder="John" minlength="2" required>
+                  </div>
+
+                  <div class="half">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" placeholder="Doe" minlength="2" required>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="half">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Example@email.com" autocomplete="email" required>
+                  </div>
+
+                  <div class="half">
+                    <label for="package">Package:</label>
+                    <select id="package" name="package" required>
+                      <option value="">Choose package</option>
+                      <option value="none">None</option>
+                      <option value="basic">Basic</option>
+                      <option value="standard">Standard</option>
+                      <option value="premium">Premium</option>
+                    </select>
+                  </div> 
+                </div>
+
+                <div class="row"> 
+                  <p>Inquiry:</p>
+                  <textarea rows="5" minlength="15" maxlength="500" placeholder="Type inquiry here" required></textarea>
+                </div>
+
+                <div class="row">
+                  <input type="submit" value="Submit Info">
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+    <footer>
+      <img class="footbanner" src="./images/logobanner.png" alt="Comany banner">
+      
+      <div class="fcontent">
+
+        <p class="copyright">1111, Industry Avenu, Øttawa [Øntario] <br>
+        Copyright © 2023 Logo Company & Co</p>
+
+        <h2>Logo Company & Co</h2>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#abt">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      
+      </div>
+    </footer>
 </body>
 
 </html>

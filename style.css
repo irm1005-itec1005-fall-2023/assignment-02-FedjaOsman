@@ -3,17 +3,304 @@
  * CSS FILE
  */
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fb8500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+/*Scroll-to animation when clicking on links*/
+html{
+  scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
+/*Setting up basic page text color, background color, and fonts*/
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: black;
+  color: white;
+}
+/*********************************HEADER************************************/
+/*header postition and styling*/
+/*header will always be visible on top of screen*/
+header{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  border-bottom: 2px solid #cec8c8;
+  justify-content: space-between;
+  /*setting it as highest element on the page*/
+  z-index: 2;
+  font-weight: 600;
+}
+
+/*sizing header image(comapny logo)*/
+/*Size and aspect ratio will reamin the same no matter screen size*/
+header img{
+  width: 100px;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+
+}
+
+/*styling and postioning for header nav list*/
+header nav ul{
+  display: flex;
+}
+
+header nav ul li{
+  list-style: none;
+  margin: 1rem;
+  align-self: center;
+}
+
+header nav ul li a{
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+header nav ul li a:hover{
+  color: white;
+  text-decoration: overline;
+  background-color: black;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+/*styling and positioning for h2 in header*/
+header h2{
+  align-self: center;
   text-align: center;
-  color: #023047;
+  justify-content: center;
+  color: black;
+}
+
+
+
+/**********************************Main*************************************/
+/*Spacing from top of screen for all content visibility since header is fixed to top*/
+main{
+  padding-top: 3.9rem;
+}
+
+/*Fixing background on image since it has transparency*/
+main img{
+  background-color: white;
+}
+
+/*Setting up hero section*/
+.hero{
+  display: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/*Making image take up 10% screen width at all times*/
+.hero img{
+  width: 100%;
+ 
+}
+
+/*positoning and styling h1*/
+.hero h1{
+  position: absolute;
+  padding: 2rem;
+  top: 15%;
+  max-width: 50%;
+  white-space: pre-wrap;
+  font-size: 4vw;
+  color: white;
+}
+
+/*positioning and styling hero paragraph*/
+.hero p{
+  position: absolute;
+  padding: 2rem;
+  top: 37%;
+  max-width: 50%;
+  font-size: 2.5vw;
+  color: white;
+}
+
+/*styling and positioning table of contents(toc)*/
+.toc{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 35%;
+  border: 5px solid white;
+  background-color: black;
+  padding: 1.5rem;
+  padding-bottom: 10rem;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.toc ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toc ul li a{
+  color: white;
+
+}
+
+/*Pricing boxes*/
+.pricecontainer{
+  display: grid;
+}
+
+/*style for each container*/
+.pricecontainer td{
+  border: 3px solid white;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  color: black;
+  font-size: 2vw;
+  padding: 3rem;
+  vertical-align: top;
+}
+
+/*styling for list in price containers*/
+.pricecontainer ul{
+  font-weight: 200;
+  list-style-type: square;
+}
+
+/*Contact text styling and positioning*/
+.contactcontent{
+  display: flex;
+  justify-content: space-around;
+  padding: 10%;
+}
+
+.contactcontent h2{
+  font-size: 3.5vw;
+  margin: 1rem;
+}
+
+.contactcontent p{
+  font-size: 1.5vw;
+  margin: 1rem;
+}
+
+.textcontact{
+  background-color: white;
+  color: black;
+  border: 3px solid #cec8c8;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  margin-right: 7%;
+}
+
+/*Styling and positioning for contact form*/
+form{
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 3px solid #cec8c8;
+  color: black;
+  display: inline-block;
+  width: 100%;
+  
+}
+
+/*form title*/
+.ftitle{
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+fieldset{
+  border: 2px solid #8b8686;
+  font-size: 1.1vw;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+/*********************************FOOTER************************************/
+/*footer postition and styling*/
+footer{
+  padding-top: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+  width: 100%;
+  justify-content: space-around;
+  font-weight: 600;
+}
+
+/*banner size and width*/
+.footbanner{
+  width: 100%;
+  max-height: 100%;
+  margin-top: 0.1rem;
+}
+
+/*Styling and positioning for content in the footer*/
+.fcontent{
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer h2{
+  align-self: center;
+  text-align: center;
+}
+
+/*Styling and positioning for footer nav list*/
+footer ul{
+  display: flex;
+} 
+
+footer ul li{
+  list-style: none;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+footer ul li a{
+  color: #cec8c8;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px;
+}
+
+/*Hover effects for <a> tags in footer*/
+footer ul li a:hover{
+  color: black;
+  text-decoration: overline;
+  background-color: white;
+  padding: 10px;
+  border-radius: 1rem;
+}
+
+footer .copyright{
+  margin-left: 1.5rem;
+  font-weight: 200;
+  color: #cec8c8;
 }
