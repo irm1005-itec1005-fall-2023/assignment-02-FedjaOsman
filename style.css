@@ -3,6 +3,17 @@
  * CSS FILE
  */
 
+/* SOURCES
+ 
+- z-index: line 37, to place text over img, https://www.browserstack.com/guide/position-text-over-image-using-css
+- position:  for placement of elements, https://www.freecodecamp.org/news/css-positioning-position-absolute-and-relative/  
+- anchor link offsets in html, https://www.will-myers.com/articles/anchor-link-offset-trick-in-squarespace
+- vw (viewport width) for my sanity while working switching between devices with different screen sizes
+  to keep content size relative, https://stackoverflow.com/questions/11777598/font-size-relative-to-the-users-screen-resolution
+-
+
+*/
+
 
 /*Scroll-to animation when clicking on links*/
 html{
@@ -149,7 +160,6 @@ main img{
   justify-content: center;
   align-items: start;
   position: relative;
-  flex-shrink: 0;
 }
 
 .hero img{
@@ -163,7 +173,6 @@ main img{
   padding: 2vw;
   top: 15%;
   max-width: 50%;
-  white-space: pre-wrap;
   font-size: 4vw;
   color: white;
 }
