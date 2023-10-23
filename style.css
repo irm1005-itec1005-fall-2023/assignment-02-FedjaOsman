@@ -83,7 +83,65 @@ main{
   padding-top: 3.9rem;
 }
 
-/*Fixing background on image since it has transparency*/
+/*styling and positioning table of contents(toc)*/
+.tocbackground{
+  width: 100%;
+  background-color: white;
+  padding-top: 4rem;
+}
+
+.toc-container{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: black;
+  width: 100%;
+}
+
+.toc{
+  width: 25%;
+  border: 5px solid black;
+  background-color: white;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.toc ul{
+  margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.toc ul li{
+  margin-bottom: 0.5rem;
+}
+
+.toc ul li a{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.toc ul li a:hover{
+  color: white;
+  background-color: black;
+  text-decoration: overline;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/*Fixing background on banner image since it has transparency*/
 main img{
   background-color: white;
 }
@@ -98,7 +156,6 @@ main img{
   flex-shrink: 0;
 }
 
-/*Making image take up 10% screen width at all times*/
 .hero img{
   width: 100%;
  
@@ -125,35 +182,135 @@ main img{
   color: white;
 }
 
-/*styling and positioning table of contents(toc)*/
-.toc{
+/*Styling for call to action section*/
+.cta-container{
+  padding-top: 3rem;
+  padding-left: 20rem;
+  padding-right: 8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cta-text{
+  text-align: end;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.cta-image{
+  max-width: 70%;
+  height: auto;
+}
+
+/*contact us styling*/
+main .contact-btn{
   display: flex;
-  flex-direction: column;
-  margin-left: 50%;
-  transform: translate(-50%);
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  width: 35%;
-  border: 5px solid white;
-  background-color: black;
-  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 10rem;
-  align-items: center;
+}
+
+main .cta a{
+  color: black;
+  background-color: white;
   border-radius: 1rem;
-  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.5rem;
 }
 
-.toc ul{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.toc ul li a{
+.cta a:hover{
+  background-color: black;
   color: white;
+  border-radius: 0rem;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
 
+/*effect I tried for changing contents of the contact link*/
+/*there's probably a better way to do this, but this is all I managed exploring on my own*/
+.cta a:hover:before{
+  content: ">";
+}
+
+.cta a:hover:after{
+  content: "<";
+}
+
+/*FAQ styling*/
+
+.faq h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 6rem;
+}
+
+.faq p{
+  font-size: 3rem;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.faq-list{
+  list-style: none;
+  margin-bottom: 15rem;
+}
+
+.question{
+  border: 3px solid #a5a5a5;
+  padding: 1.5rem;
+  background-color: white;
+  color: #3f3f3f;
+  font-size: 2rem;
+  margin-right: 27rem;
+  margin-left: 20rem;
+}
+
+.question b{
+  margin-left: 3rem;
+}
+
+.answer{
+  padding: 1.5rem;
+  background-color: #c9c6c6;
+  font-size: 2rem;
+  margin-right: 27rem;
+  margin-left: 20rem;
+  margin-bottom: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.answer li{
+  margin-left: 3rem;
+  list-style: square;
+}
+
+.answer a{
+  color: #636262;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+.answer a:hover{
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/*Styling for pricing section*/
+main .price h2{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 /*Pricing boxes*/
@@ -215,7 +372,6 @@ form{
   color: black;
   display: inline-block;
   width: 100%;
-  
 }
 
 /*form title*/
@@ -235,6 +391,28 @@ fieldset{
 label{
   display: block;
   margin-bottom: 5px;
+}
+
+/*FOR VISUALIZING OFFSETS*/
+/**/
+main .offsetabt{
+  border: 3px solid rgb(200, 255, 0);
+}
+
+main .offsetcta{
+  border: 3px solid rgb(82, 215, 255);
+}
+
+main .offsetfaq{
+  border: 3px solid rgb(120, 82, 255);
+}
+
+main .offsetprice{
+  border: 3px solid rgb(235, 82, 255);
+}
+
+main .offsetcontact{
+  border: 3px solid red;
 }
 
 
