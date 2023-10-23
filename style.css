@@ -4,12 +4,10 @@
  */
 
 /* SOURCES
- 
-- z-index: line 37, to place text over img, https://www.browserstack.com/guide/position-text-over-image-using-css
+- z-index: line 38, for keeping header on top layer of screen, https://www.browserstack.com/guide/position-text-over-image-using-css
 - position:  for placement of elements, https://www.freecodecamp.org/news/css-positioning-position-absolute-and-relative/  
 - anchor link offsets in html, https://www.will-myers.com/articles/anchor-link-offset-trick-in-squarespace
-- vw (viewport width) for my sanity while working switching between devices with different screen sizes
-  to keep content size relative, https://stackoverflow.com/questions/11777598/font-size-relative-to-the-users-screen-resolution
+- vw: keep content size relative to viewport width, https://stackoverflow.com/questions/11777598/font-size-relative-to-the-users-screen-resolution
 -
 
 */
@@ -285,7 +283,7 @@ main .cta a{
 .answer{
   padding: 1.5rem;
   background-color: #c9c6c6;
-  font-size: 2rem;
+  font-size: 2vw;
   margin-right: 22vw;
   margin-left: 22vw;
   margin-bottom: 2vw;
@@ -399,7 +397,7 @@ label{
 }
 
 /*FOR VISUALIZING OFFSETS*/
-/**/
+/*
 main .offsetabt{
   border: 3px solid rgb(200, 255, 0);
 }
@@ -419,7 +417,7 @@ main .offsetprice{
 main .offsetcontact{
   border: 3px solid red;
 }
-
+*/
 
 /*********************************FOOTER************************************/
 /*footer postition and styling*/
