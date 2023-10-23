@@ -77,7 +77,7 @@ header h2{
 
 
 
-/**********************************Main*************************************/
+/**********************************MAIN*************************************/
 /*Spacing from top of screen for all content visibility since header is fixed to top*/
 main{
   padding-top: 3.9rem;
@@ -87,7 +87,7 @@ main{
 .tocbackground{
   width: 100%;
   background-color: white;
-  padding-top: 4rem;
+  padding-top: 4vw;
 }
 
 .toc-container{
@@ -102,17 +102,16 @@ main{
   width: 25%;
   border: 5px solid black;
   background-color: white;
-  padding: 1.5rem;
-  padding-bottom: 3rem;
+  padding: 1.5vw;
+  padding-bottom: 3vw;
   align-items: center;
-  border-radius: 1rem;
-  font-size: 1.5rem;
+  border-radius: 1vw;
+  font-size: 1.5vw;
   text-align: center;
-  font-size: 2rem;
 }
 
 .toc ul{
-  margin-top: 1rem;
+  margin-top: 1vw;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -122,12 +121,12 @@ main{
 }
 
 .toc ul li{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5vw;
 }
 
 .toc ul li a{
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 300;
 }
 
@@ -135,9 +134,9 @@ main{
   color: white;
   background-color: black;
   text-decoration: overline;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1.5rem;
+  border-radius: 0.5vw;
+  padding: 0.5vw;
+  font-size: 1.5vw;
   font-weight: 300;
 }
 
@@ -164,7 +163,7 @@ main img{
 /*positoning and styling h1*/
 .hero h1{
   position: absolute;
-  padding: 2rem;
+  padding: 2vw;
   top: 15%;
   max-width: 50%;
   white-space: pre-wrap;
@@ -175,7 +174,7 @@ main img{
 /*positioning and styling hero paragraph*/
 .hero p{
   position: absolute;
-  padding: 2rem;
+  padding: 2vw;
   top: 37%;
   max-width: 50%;
   font-size: 2.5vw;
@@ -184,12 +183,12 @@ main img{
 
 /*Styling for call to action section*/
 .cta-container{
-  padding-top: 3rem;
-  padding-left: 20rem;
-  padding-right: 8rem;
+  padding-top: 3vw;
+  padding-left: 18vw;
+  padding-right: 8vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 1vw;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -197,7 +196,7 @@ main img{
 
 .cta-text{
   text-align: end;
-  font-size: 2rem;
+  font-size: 1.6vw;
   padding-bottom: 0.5rem;
 }
 
@@ -211,7 +210,7 @@ main .contact-btn{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 9vw;
 }
 
 main .cta a{
@@ -220,9 +219,9 @@ main .cta a{
   border-radius: 1rem;
   text-decoration: none;
   font-weight: 700;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  font-size: 1.6vw;
+  margin: 1vw;
+  padding: 0.5vw;
 }
 
 .cta a:hover{
@@ -244,33 +243,33 @@ main .cta a{
 }
 
 /*FAQ styling*/
-
 .faq h2{
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.7vw;
   font-weight: 300;
-  letter-spacing: 6rem;
+  letter-spacing: 5vw;
 }
 
 .faq p{
-  font-size: 3rem;
-  margin-top: 4rem;
+  font-size: 2.7vw; 
   text-align: center;
+  margin-top: 4vw;
+
 }
 
 .faq-list{
   list-style: none;
-  margin-bottom: 15rem;
+  margin-bottom: 13vw;
 }
 
 .question{
   border: 3px solid #a5a5a5;
-  padding: 1.5rem;
+  padding: 1vw;
   background-color: white;
   color: #3f3f3f;
-  font-size: 2rem;
-  margin-right: 27rem;
-  margin-left: 20rem;
+  font-size: 2vw;
+  margin-right: 22vw;
+  margin-left: 22vw;
 }
 
 .question b{
@@ -281,15 +280,15 @@ main .cta a{
   padding: 1.5rem;
   background-color: #c9c6c6;
   font-size: 2rem;
-  margin-right: 27rem;
-  margin-left: 20rem;
-  margin-bottom: 2rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  margin-right: 22vw;
+  margin-left: 22vw;
+  margin-bottom: 2vw;
+  border-bottom-left-radius: 0.3vw;
+  border-bottom-right-radius: 0.3vw;
 }
 
 .answer li{
-  margin-left: 3rem;
+  margin-left: 3vw;
   list-style: square;
 }
 
@@ -297,7 +296,7 @@ main .cta a{
   color: #636262;
   font-weight: 600;
   text-decoration: none;
-  font-size: 1.7rem;
+  font-size: 1.7vw;
 }
 
 .answer a:hover{
@@ -308,9 +307,9 @@ main .cta a{
 
 /*Styling for pricing section*/
 main .price h2{
-  margin-top: 2rem;
+  margin-top: 2vw;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.7vw;
 }
 
 /*Pricing boxes*/
@@ -323,10 +322,10 @@ main .price h2{
   border: 3px solid white;
   background-color: white;
   border: 2px solid black;
-  border-radius: 0.5rem;
+  border-radius: 0.4vw;
   color: black;
   font-size: 2vw;
-  padding: 3rem;
+  padding: 2.7vw;
   vertical-align: top;
 }
 
